@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to left, rgb(255, 0, 106), rgb(0, 162, 255));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock {
+    border: 10px solid white;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    padding: 20px
+}
+
+.sec-hand, .min-hand, .hour-hand {
+    position: relative;
+    top: 50%;
+    transform-origin: 100%;
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0, 5.1, 0.17, 1);  /* for the tick effect, play around with DOMtools in chrome to */
+    width: 50%;
+    height: 5px;
+    background: black;
+}
+
+.sec-hand {
+    transform: rotate(90deg);
+}
+
+.min-hand {
+
+    transform: rotate(90deg);
+}
+
+.hour-hand {
+
+    transform: rotate(90deg);
+}
